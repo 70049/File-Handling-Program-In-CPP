@@ -6,11 +6,11 @@ using namespace std;
 void copyfile(char* f1,char* f2);      //FUNCTION DECLARATION//
 void copyfile(char* f1,char* f2)         //CREATE A NEW FUNCTION(copyfile)//
 {
-    ifstream fin;                    //ifstream is Function It'll Open Our Exist file and *fin is a object//
-    ofstream fout;                   //ofstream is a Function It'll Copy our Exist File Data to Another File and *fout is a object//
+    ifstream fin;                    //ifstream is Function It'll control Our Exist file and *fin is a object//
+    ofstream fout;                   //ofstream is a Function It'll control our new file Similiarly fout is a object of ofstream function//
     char ch;
     fin.open(f1);                        //fin a function It'll entered in our Exist file 
-    fout.open(f2);                       //fout Is  a FUnction It'll open our new file
+    fout.open(f2);                       //fout Is  a Function It'll open our new file
     ch=fin.get();                          //get is function which read our exist file data
     while(!fin.eof())                    //eof Is a Function It control the loop to the end of file data
     {
